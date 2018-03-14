@@ -9,6 +9,8 @@ using namespace std;
 
 class Real: public NumberInterface
 {
+  friend class NumberOutputter;
+private:
   float num;
 
 public:
@@ -17,8 +19,6 @@ public:
   float modulus();
   float getRealPart();
   float getImaginaryPart();
-
-  void output();
 };
 
 #endif

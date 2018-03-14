@@ -1,5 +1,6 @@
 #include "Real.h"
 #include "Complex.h"
+#include "NumberOutputter.h"
 
 int main()
 {
@@ -10,7 +11,8 @@ int main()
 	Real real(realNumber);
 
   cout << "You entered: ";
-  real.output();
+  NumberOutputter real_num;
+  real_num.outputReal(real);
   cout << endl;
 
 	cout << "Abs value = " << real.modulus() << "\n" << endl;
@@ -22,7 +24,8 @@ int main()
 	Complex comp(realPart, imaginaryPart);
 
 	cout << "You entered: ";
-  comp.output();
+  NumberOutputter complex_num;
+  complex_num.outputComplex(comp);
   cout << endl;
 
 	cout << "Abs value = " << comp.modulus() << endl;

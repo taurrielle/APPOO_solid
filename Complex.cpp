@@ -21,16 +21,3 @@ float Complex::getImaginaryPart()
 {
   return this->im;
 }
-
-void Complex::output()
-{
-	if (this->im < 0)
-  {
-    cout << this->re << "-" << abs(this->im) << "i";
-  }
-  else
-  {
-    cout << this->re << "+" << this->im << "i" 	;
-  }
-}
-

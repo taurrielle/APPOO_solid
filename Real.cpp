@@ -19,8 +19,3 @@ float Real::getImaginaryPart()
 {
 
 }
-
-void Real::output()
-{
-  cout << this->num;
-}
