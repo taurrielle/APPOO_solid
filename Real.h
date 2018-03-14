@@ -17,8 +17,6 @@ public:
   Real(float number);
 
   float modulus();
-  float getRealPart();
-  float getImaginaryPart();
 };
 
 #endif

@@ -15,7 +15,7 @@ int main()
   real_num.outputReal(real);
   cout << endl;
 
-	cout << "Abs value = " << real.modulus() << "\n" << endl;
+	cout << "Absolute value = " << real.modulus() << "\n" << endl;
 
 
 	cout << "Enter a complex number: ";
@@ -28,9 +28,9 @@ int main()
   complex_num.outputComplex(comp);
   cout << endl;
 
-	cout << "Abs value = " << comp.modulus() << endl;
-	cout << "Real part = " << comp.getRealPart() << endl;
-	cout << "Imaginary part = " << comp.getImaginaryPart() << endl;
+	cout << "Absolute value = " << comp.modulus() << endl;
+	cout << "Re = " << comp.getRealPart() << endl;
+	cout << "Im = " << comp.getImaginaryPart() << endl;
 
 	return 0;
 }

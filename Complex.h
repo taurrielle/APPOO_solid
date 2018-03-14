@@ -2,12 +2,13 @@
 #define ComplexHeader
 
 #include "NumberInterface.h"
+#include "IComplexNumber.h"
 
 #include <iostream>
 using namespace std;
 #include <cmath>
 
-class Complex: public NumberInterface
+class Complex: public NumberInterface, public IComplexNumber
 {
   friend class NumberOutputter;
 private:
